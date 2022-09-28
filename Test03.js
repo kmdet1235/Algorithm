@@ -24,7 +24,7 @@ function solution(s) {
   arr_max = newa.filter((a) => !arr_min.includes(a)); // 원래 입력받은 배열에서 소수가 아닌값을 빼는 차집합 함수
   answer_max = Math.max.apply(null, arr_max); // 소수중에 최대값 입력
   answer_min = Math.min.apply(null, arr_min); // 소수가 아닌 값중에 최소값 입력
-  console.log(answer_min, answer_max);
+  return `${answer_min} ${answer_max}`;
 }
 
 let s = "97 75 88 99 95 92 73";
